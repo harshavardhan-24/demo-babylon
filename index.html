@@ -49,8 +49,6 @@
        var scene = new BABYLON.Scene(engine);
        scene.clearColor = new BABYLON.Color3(0, 1, 0);
        var camera = new BABYLON.ArcRotateCamera("Camera", 1, 0.8, 10, new BABYLON.Vector3(0, 0, 0), scene);
-       camera.setPosition(new BABYLON.Vector3(0, 0, 0));
-     // var camera = new BABYLON.TouchCamera("TouchCamera", new BABYLON.Vector3(0, 1, -15), scene);
        scene.activeCamera.attachControl(canvas);
        var light0 = new BABYLON.PointLight("Omni", new BABYLON.Vector3(0, 0, 10), scene);
 	    light0.diffuse = new BABYLON.Color3(5, 0, 0);
